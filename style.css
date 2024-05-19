@@ -10,7 +10,7 @@
     --primary-color: #02799D;
     --bg-button-color: #E1E1E6;
     --bg-color: #ffffff;
-
+    
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
@@ -19,10 +19,15 @@
     height: 1px;
     position: absolute;
     overflow: hidden;
-
+    
     margin: -1px;
     padding: 0px;
     appearance: none;
+}
+
+#sounds button.focus {
+    background-color: var(--primary-color);
+    color: var(--text-focus-color);
 }
 
 body {
@@ -92,7 +97,4 @@ button {
     color: var(--text-color);
 }
 
-#sounds button.focus {
-    background-color: var(--primary-color);
-    color: var(--text-focus-color);
-}
+

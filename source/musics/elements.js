@@ -1,0 +1,1 @@
+export const controlsSounds = document.getElementById('sounds')

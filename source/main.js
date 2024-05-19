@@ -1,3 +1,5 @@
-import { focusTimer } from "./FocusTimer/index.js";
+import * as FocusTimer from './FocusTimer/index.js'
+import * as Music from './musics/index.js'
 
-focusTimer()
+FocusTimer.start(5, 0)
+Music.startMusic()
