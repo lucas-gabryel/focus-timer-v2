@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer V2</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./source/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <section id="timer">
+            <span id="counter">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span> 
+            </span>
+            <span id="controls">
+                <button data-action="toggleRunning" class="ph-bold ph-play-circle">
+                    <span class="sr-only">Play</span>
+                </button>
+                <button data-action="reset" class="ph-bold ph-stop-circle">
+                    <span class="sr-only">Reset</span>
+                </button>
+                <button data-action="moreFive" class="ph-bold ph-plus-circle">
+                    <span class="sr-only">Mais 5 minutos</span>
+                </button>
+                <button data-action="minusFive" class="ph-bold ph-minus-circle">
+                    <span class="sr-only">Menos 5 minutos</span>
+                </button>
+            </span>
+        </section>
+        <section id="sounds">
+            <button class="ph-bold ph-tree">
+                <!-- <img src="./assets/arvore.svg" alt="Vetor de uma árvore"> -->
+                <span class="sr-only">Vetor de uma árvore</span>
+            </button>
+            <button class="ph-bold ph-cloud-rain focus">
+                <!-- <img src="./assets/nuvem.svg" alt="Vetor de uma nuvem"> -->
+                <span class="sr-only">Vetor de uma nuvem</span>
+            </button>
+            <button class="ph-bold ph-storefront">
+                <!-- <img src="./assets/tenda.svg" alt="Vetor de uma barraca de mercado"> -->
+                <span class="sr-only">Vetor de uma barraca de mercado</span>
+            </button>
+            <button class="ph-bold ph-fire">
+                <!-- <img src="./assets/fogo.svg" alt="Vetor de fogo"> -->
+                <span class="sr-only">Vetor de fogo</span>
+            </button>
+        </section>
+
+    </div>
+</body>
+</html>
